@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @apply bg-[#ae9cff];
+}
+
+.container {
+  @apply bg-[#fff] w-[90vmin] absolute top-[50%] left-[50%] px-[30px] py-[40px] rounded-xl;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.search-box {
+  @apply w-full flex justify-between;
+}
+
+.search-box button {
+  @apply py-[15px] w-[25%] bg-[#ae9cff] border-none outline-none text-[#fff] rounded-md;
+}
