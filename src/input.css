@@ -599,6 +599,16 @@ body {
   justify-content: space-between;
 }
 
+.search-box input {
+  width: 70%;
+  border-style: none;
+  padding: 5px;
+  font-size: 16px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-bottom: 3px solid #ae9cff;
+}
+
 .search-box button {
   width: 25%;
   border-radius: 0.375rem;

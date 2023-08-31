@@ -20,6 +20,11 @@ body {
   @apply w-full flex justify-between;
 }
 
+.search-box input {
+  @apply p-[5px] w-[70%] border-none outline-none text-[16px];
+  border-bottom: 3px solid #ae9cff;
+}
+
 .search-box button {
   @apply py-[15px] w-[25%] bg-[#ae9cff] border-none outline-none text-[#fff] rounded-md;
 }
