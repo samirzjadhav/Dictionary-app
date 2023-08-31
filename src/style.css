@@ -42,3 +42,16 @@ body {
 .result .details {
   @apply flex gap-[10px] text-[#b3b6d4] mt-[5px] mb-[20px] text-[14px];
 }
+
+.word-meaning {
+  @apply text-[#575a7b];
+}
+
+.word-example {
+  @apply text-[#575a7b] italic pl-[20px] mt-[30px];
+  border-left: 5px solid #ae9cff;
+}
+
+.error {
+  @apply mt-[80px] text-center;
+}
