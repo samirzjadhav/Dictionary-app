@@ -23,3 +23,22 @@ body {
 .search-box button {
   @apply py-[15px] w-[25%] bg-[#ae9cff] border-none outline-none text-[#fff] rounded-md;
 }
+.result {
+  @apply relative;
+}
+
+.result h3 {
+  @apply text-[30px] text-[#1f194c];
+}
+
+.result .word {
+  @apply flex justify-between mt-[80px];
+}
+
+.result button {
+  @apply bg-transparent text-[#ae9cff] border-none outline-none text-[18px];
+}
+
+.result .details {
+  @apply flex gap-[10px] text-[#b3b6d4] mt-[5px] mb-[20px] text-[14px];
+}
