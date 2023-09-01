@@ -21,6 +21,7 @@ btn.addEventListener("click", () => {
           <div class="details">
               <p>${data[0].meanings[0].partOfSpeech}</p>
               <p>/${data[0].phonetic}/</p>
+              <p>${data[0].meanings[0].synonyms[0]}/</p>
           </div>
           <p class="word-meaning">
              ${data[0].meanings[0].definitions[0].definition}
