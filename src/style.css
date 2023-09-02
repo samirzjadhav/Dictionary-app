@@ -48,6 +48,10 @@ body {
   @apply flex gap-[10px] text-[#b3b6d4] mt-[5px] mb-[20px] text-[14px];
 }
 
+.word-details {
+  @apply flex flex-col gap-[20px];
+}
+
 .word-meaning {
   @apply text-[#575a7b];
 }

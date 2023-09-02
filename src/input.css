@@ -659,6 +659,12 @@ body {
   color: rgb(179 182 212 / var(--tw-text-opacity));
 }
 
+.word-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .word-meaning {
   --tw-text-opacity: 1;
   color: rgb(87 90 123 / var(--tw-text-opacity));

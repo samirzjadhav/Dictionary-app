@@ -12,26 +12,37 @@ btn.addEventListener("click", () => {
       console.log(data);
 
       result.innerHTML = `
-      <div class="word">
-              <h3>${inpWord}</h3>
-              <button onclick="playSound()">
-                  <i class="fas fa-volume-up"></i>
-              </button>
-          </div>
-          <div class="details">
-              <p>${data[0].meanings[0].partOfSpeech}</p>
-              <p>/${data[0].phonetic}/</p>
-              <p>${data[0].meanings[0].synonyms[0]}/</p>
-          </div>
+        <div class="word">
+          <h3>${inpWord}</h3>
+          <button onclick="playSound()">
+            <i class="fas fa-volume-up"></i>
+          </button>
+        </div>
+        <div class="details">
+          <p>${data[0].meanings[0].partOfSpeech}</p>
+          <p>/${data[0].phonetics[0]}/</p>
+          <p>${data[0].meanings[0].synonyms[0]}/</p>
+        </div>
+
+        <div class="word-details">
           <p class="word-meaning">
-             ${data[0].meanings[0].definitions[0].definition}
+            1. ${data[0].meanings[0].definitions[0].definition}
           </p>
           <p class="word-meaning">
-          <a href="${data[0].sourceUrls[0]}">${data[0].sourceUrls[0]}</a>
+            2. ${data[0].meanings[1].definitions[0].definition}
+          </p>
+          <p class="word-meaning">
+            3. ${data[0].meanings[2].definitions[0].definition}
+          </p>
+          <p class="word-meaning">
+            <a href="${data[0].sourceUrls[0]}">${data[0].sourceUrls[0]}</a>
           </p>
           <p class="word-example">
-              ${data[0].meanings[0].definitions[0].example || ""}
-          </p>`;
+            ${data[0].meanings[0].definitions[0].example || ""}
+          </p>
+        </div>
+      `;
+
       sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
     })
     .catch(() => {
